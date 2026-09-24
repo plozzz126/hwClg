@@ -1,0 +1,14 @@
+[
+    {
+        "goods": [
+            {
+                "name": "Margaryta",
+                "price": 2500,
+                "size": 30
+            }
+        ],
+        "tot_price": 2500,
+        "user": "Andrey",
+        "status": "Готовиться"
+    }
+]
