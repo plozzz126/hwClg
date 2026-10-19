@@ -1,0 +1,20 @@
+{% extends 'app/base.html' %}
+
+{% block title %}
+ГЛАВНАЯ СТРАНИЦА
+{% endblock%}
+{% block content %}
+<h1>Главная</h1>
+
+<div class="users">
+    {% for u in users %}
+        <div class="user-card">
+            <h2>{{ u.name }}</h2>
+            <p><strong>ID:</strong> {{ u.id }}</p>
+            <p><strong>Возраст:</strong> {{ u.age }}</p>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
+

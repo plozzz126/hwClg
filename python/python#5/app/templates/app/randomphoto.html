@@ -1,0 +1,18 @@
+{% extends 'app/base.html' %}
+
+{% block title %}Фотографии{% endblock %}
+
+{% block content %}
+<h1>Фотографии из API</h1>
+
+<div class="users">
+    {% for p in photos %}
+        <div class="user-card">
+            <img src="{{ p.url }}">
+            <h2>{{ p.title }}</h2>
+            <p>ID: {{ p.id }}</p>
+            <p>Альбом: {{ p.albumId }}</p>
+        </div>
+    {% endfor %}
+</div>
+{% endblock %}
